@@ -5,7 +5,7 @@ A simple python script that scans the Downloads directory and moves specific fil
 Have a cluttered Downloads folder?
 Run this script in order to move all the pictures,documents,music to their respective folders!
 
-**Currently availaible for linux and windows systems **
+**Currently availaible for linux and windows systems**
 
 Categorises into Pictures Documents and Music (support for more categories will be added if required).
 
