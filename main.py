@@ -1,16 +1,17 @@
-#imports
-import subprocess
+import shutil
+from pathlib import Path
 import os
 from os import listdir
 from os.path import isfile, join
 
 #Set home directory path
-homedir = os.environ['HOME']
-print (homedir)
+#homedir = os.environ['HOME']
+#print (homedir)
+homedir = str(Path.home())
 
 #Set the soource direcory path i.e the Downloads path
 #Change the "/Downloads" path to any other appropriate path if this script is required to run in that directory
-source=homedir+"/Downloads"
+source = os.path.join(homedir,'Downloads')
 all_files= [f for f in listdir(source) if isfile(join(source, f))]
 
 #List containing the files to be moved
@@ -51,17 +52,21 @@ def show_moved_musics():
 
 #functions handling the moving mechanism
 def move_to_document():
+    destination = os.path.join(homedir,'Documents')
     for document in documents:
-        subprocess.call(['mv %s/"%s" ~/Documents' %(source,document)],shell=True)
+        shutil.move(os.path.join(source,document),destination)
     show_moved_documents()
+
 def move_to_pictures():
+    destination = os.path.join(homedir,'Pictures')
     for picture in pictures:
-        subprocess.call(['mv %s/"%s" ~/Pictures' %(source,picture)],shell=True)
+        shutil.move(os.path.join(source,picture),destination)
     show_moved_pictures()
 
 def move_to_musics():
+    destination = os.path.join(homedir,'Music')
     for music in musics:
-        subprocess.call(['mv %s/"%s" ~/Music' %(source,music)],shell=True)
+        shutil.move(os.path.join(source,music),destination)
     show_moved_musics()
 
 
