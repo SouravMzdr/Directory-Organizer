@@ -1,4 +1,4 @@
-# Move Files Package
+# 'Directory Organiser' Package
 
 [![Setup Automated](https://img.shields.io/badge/setup-automated-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 ![Python Version](https://img.shields.io/badge/python-3.x-brightgreen.svg)
@@ -9,7 +9,7 @@
 
 Have a cluttered Downloads folder? No Worries!
 
-`Move Files` is a Simple Python Package that scans the Downloads Directory and moves the Specific File Types to its Specific Directories.
+`Directory Organiser` is a Simple Python Package that scans the Downloads Directory and moves the Specific File Types to its Specific Directories.
 
 <b> Currently Available for Debian and Windows Systems. </b>
 
@@ -19,7 +19,7 @@ Pictures will be moved to `/home/$user/Pictures` or `c:\user\username\Pictures` 
 
 This Package is developed collectively by [@SouravMzdr](https://github.com/SouravMzdr) and  [@rahulbordoloi](https://github.com/rahulbordoloi) which has been published to PyPI.
 
-All the classes/methods will be imported under the package `move_files`.
+All the classes/methods will be imported under the package `directory_organiser`.
 
 Further File Types will be added to existing files to widen support.
 
@@ -28,12 +28,12 @@ Further File Types will be added to existing files to widen support.
 Run the following command on your terminal to install : 
 
 ```python
-pip install move_files
+pip install directory_organiser
 ```
 OR
 
 ```python
-pip3 install move_files
+pip3 install directory_organiser
 ```
 
 ## Usage
@@ -48,9 +48,9 @@ CLC to be added here.
 
 Screenshots to be added here.
 
-## Developing `Move Files`
+## Developing `Directory Organiser`
 
-To install `move_files`, along with the tools you need to develop and run tests, run the following in your virtualenv:
+To install `directory_organiser`, along with the tools you need to develop and run tests, run the following in your virtualenv:
 
 ```bash
 $ pip install -e .[dev]
