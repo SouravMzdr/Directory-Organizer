@@ -1,20 +1,77 @@
-# move_files
-A simple python script that scans the Downloads directory and moves specific file type to specific directories.
+# Move Files Package
 
+[![Setup Automated](https://img.shields.io/badge/setup-automated-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
+![Python Version](https://img.shields.io/badge/python-3.x-brightgreen.svg)
+![Test passing](https://img.shields.io/badge/Tests-passing-brightgreen.svg)
+[![Open Source Love png2](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-Have a cluttered Downloads folder?
-Run this script in order to move all the pictures,documents,music to their respective folders!
+## About
 
-**Currently availaible for linux and windows systems**
+Have a cluttered Downloads folder? No Worries!
 
-Categorises into Pictures Documents and Music (support for more categories will be added if required).
+`Move Files` is a Simple Python Package that scans the Downloads Directory and moves the Specific File Types to its Specific Directories.
 
-Pictures will be moved to /home/$user/Pictures (c:\user\username\Pictures for windows) ,similarly documents , music to their respective folders.
+<b> Currently Available for Debian and Windows Systems. </b>
 
-Further file types can be added to existing files to widen support.
+Categorise your Files into Pictures Documents and Music! (Support for more categories will be added if Required).
+
+Pictures will be moved to `/home/$user/Pictures` or `c:\user\username\Pictures` for Windows, similarly Documents , Music to their respective folders.
+
+This Package is developed collectively by [@SouravMzdr](https://github.com/SouravMzdr) and  [@rahulbordoloi](https://github.com/rahulbordoloi) which has been published to PyPI.
+
+All the classes/methods will be imported under the package `move_files`.
+
+Further File Types will be added to existing files to widen support.
+
+## Installation
+
+Run the following command on your terminal to install : 
+
+```python
+pip install move_files
+```
+OR
+
+```python
+pip3 install move_files
+```
+
+## Usage
+
+Run this script in order to move all the pictures, documents, music to their respective folders!
+
+```python
+CLC to be added here.
+```
+
+## Outputs
+
+Screenshots to be added here.
+
+## Developing `Move Files`
+
+To install `move_files`, along with the tools you need to develop and run tests, run the following in your virtualenv:
+
+```bash
+$ pip install -e .[dev]
+```
+
+## Security & Bugs
 
 As a security measure this script *WILL NOT* access files located in any subdirectory unless explicitly stated.
 
-__Known bugs:__
+__Known bugs__ : <br>
 Ignores files if extension is not in lowercase standard encoding.
+
+## Contact Author(s)
+
+Name : Rahul Bordoloi <br>
+Website : https://rahulbordoloi.me <br>
+Email : rahulbordoloi24@gmail.com <br>
+
+Name : Sourav Mazumdar <br>
+Email : souravmzdr@gmail.com <br>
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/rahulbordoloi/)
 
