@@ -50,14 +50,14 @@ class move_files:
 
         # Searching for Files and Categorising
         for files in self.all_files:
-            
-            if files.endswith(self.picture_ext):
+
+            if files.endswith(tuple(self.picture_ext)):
                 self.pictures.append(files)
-            elif files.endswith(self.document_ext):
+            elif files.endswith(tuple(self.document_ext)):
                 self.documents.append(files)
-            elif files.endswith(self.music_ext):
+            elif files.endswith(tuple(self.music_ext)):
                 self.musics.append(files)
-            elif files.endswith(self.video_ext):
+            elif files.endswith(tuple(self.video_ext)):
                 self.videos.append(files)
 
 
@@ -65,25 +65,25 @@ class move_files:
         
     def show_Moved_Documents(self):
 
-        print(f"{len(documents)} Files moved to Documents!")
+        print(f"{len(self.documents)} Files moved to Documents!")
         for document in self.documents:
             print(document)
 
     def show_Moved_Pictures(self):
 
-        print(f"{len(pictures)} Files moved to Pictures!")
+        print(f"{len(self.pictures)} Files moved to Pictures!")
         for picture in self.pictures:
             print(picture)
 
     def show_Moved_Music(self):
 
-        print(f"{len(musics)} Files moved to Music!")
+        print(f"{len(self.musics)} Files moved to Music!")
         for music in self.musics:
             print(music)
         
     def show_Moved_Videos(self):
 
-        print(f"{len(videos)} Files moved to Videos!")
+        print(f"{len(self.videos)} Files moved to Videos!")
         for video in self.videos:
             print(video)
 
@@ -160,14 +160,14 @@ class move_files:
 
     
 # Main Function
-def main(path):
+def main():
     
     print("Enter the Full Path to your Directory [Ignore if 'Downloads']")
     path = input()
     if path == None:
         moveFilesObject = move_files()
     else:
-        moveFilesObject = move_files('Downloads')
+        moveFilesObject = move_files(path)
     moveFilesObject.checkCondition()
 
 
