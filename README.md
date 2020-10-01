@@ -1,4 +1,4 @@
-# 'Directory Organiser' Package
+# `Directory Organiser` Package
 
 [![Setup Automated](https://img.shields.io/badge/setup-automated-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 ![Python Version](https://img.shields.io/badge/python-3.x-brightgreen.svg)
