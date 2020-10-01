@@ -2,7 +2,7 @@
 
 [![Setup Automated](https://img.shields.io/badge/setup-automated-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 ![Python Version](https://img.shields.io/badge/python-3.x-brightgreen.svg)
-![Test passing](https://img.shields.io/badge/Tests-passing-brightgreen.svg)
+<!--![Test passing](https://img.shields.io/badge/Tests-passing-brightgreen.svg)-->
 [![Open Source Love png2](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 ## About
@@ -41,7 +41,7 @@ pip3 install directory_organiser
 Run this script in order to move all the pictures, documents, music to their respective folders!
 
 ```python
-CLC to be added here.
+python main.py
 ```
 
 ## Outputs
