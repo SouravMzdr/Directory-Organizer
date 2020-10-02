@@ -2,26 +2,27 @@
 
 [![Setup Automated](https://img.shields.io/badge/setup-automated-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 ![Python Version](https://img.shields.io/badge/python-3.x-brightgreen.svg)
-<!--![Test passing](https://img.shields.io/badge/Tests-passing-brightgreen.svg)-->
 [![Open Source Love png2](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 ## About
 
-Have a cluttered Downloads folder? No Worries!
+Have a cluttered Folder/Directory? No Worries!
 
-`Directory Organiser` is a Simple Python Package that scans the Downloads Directory and moves the Specific File Types to its Specific Directories.
+`Directory Organiser` is a Simple Python Package that scans the Folder Directory and moves the specific file types to its type specific directories.
 
-<b> Currently Available for Debian and Windows Systems. </b>
+<b> Currently Available for Debian and Windows based Systems. </b>
 
-Categorise your Files into Pictures Documents and Music! (Support for more categories will be added if Required).
+Categorise your Files into Pictures Documents and Music Videos! (Support for more categories will be added if Required).
 
-Pictures will be moved to `/home/$user/Pictures` or `c:\user\username\Pictures` for Windows, similarly Documents , Music to their respective folders.
+Pictures will be moved to `/home/$user/Pictures` for Debian-based systems or `c:\user\username\Pictures` for Windows, Similarly Documents, Music, Videos etc to their respective folders.
 
-This Package is developed collectively by [@SouravMzdr](https://github.com/SouravMzdr) and  [@rahulbordoloi](https://github.com/rahulbordoloi) which has been published to PyPI.
+This Package is developed collectively by [@rahulbordoloi](https://github.com/rahulbordoloi) and [@SouravMzdr](https://github.com/SouravMzdr) which has been published to [PyPI]().
 
 All the classes/methods will be imported under the package `directory_organiser`.
 
 Further File Types will be added to existing files to widen support.
+
+<b>Note : </b>By default, Directory Organiser considers base `Downloads` Directory.
 
 ## Installation
 
@@ -38,7 +39,7 @@ pip3 install directory_organiser
 
 ## Usage
 
-Run this script in order to move all the pictures, documents, music to their respective folders!
+Run this script in order to move all the Pictures, Documents, Music, Videos etc to their respective folders!
 
 ```python
 python main.py
@@ -46,7 +47,28 @@ python main.py
 
 ## Outputs
 
-Screenshots to be added here.
+[OOPS Implementation Output]
+```
+C:\Personal\Work\Rony\Scripts\python.exe "C:/Personal/Work/Move Files/main.py"
+
+Where do you want to Organise your Files?
+1. Downloads
+2. Any Other Location
+Enter the Full Path to your Directory [Just Type 'Downloads' for Case 2] ->
+C:\Personal\Work\Move Files\Test\Downloads
+Do you want to Display the File Names? (YES/NO) : no
+Moving Documents ...
+62 Files moved to Documents!
+Moving Pictures ...
+6 Files moved to Pictures!
+Moving Music Files ...
+1 Files moved to Music!
+Moving Video Files ...
+1 Files moved to Videos!
+Moving Other File Extensions ...
+13 Files moved to Others!
+Time Elapsed :  8.19 seconds
+```
 
 ## Developing `Directory Organiser`
 
@@ -73,5 +95,5 @@ Name : Sourav Mazumdar <br>
 Email : souravmzdr@gmail.com <br>
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/rahulbordoloi/)
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/rahulbordoloi/)
 
