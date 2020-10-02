@@ -3,8 +3,8 @@
 import os
 import shutil
 
-file = 'C:\\Personal\\Work\\Move Files\\temp.txt'
-destination = 'C:\\Personal\\Work\\Move Files\\Destination\\'
+file = 'C:\\Personal\\Work\\Directory Organiser\\temp.txt'
+destination = 'C:\\Personal\\Work\\Directory Organiser\\Destination\\'
 
 if not os.path.isdir(destination):
     os.makedirs(destination)
