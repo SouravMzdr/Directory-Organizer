@@ -22,7 +22,9 @@ All the classes/methods will be imported under the package `directory_organiser`
 
 Further File Types will be added to existing files to widen support.
 
-<b>Note : </b>By default, Directory Organiser considers base `Downloads` Directory.
+<b>Note : </b>
+*   By default, Directory Organiser considers base `Downloads` Directory.
+*   If the File-type doesn't match with either of Pictures/Documents/Videos/Music File extensions, then it'll be moved to `Others` Directory.
 
 ## Installation
 
