@@ -81,10 +81,10 @@ $ pip install -e .[dev]
 ## Security & Bugs
 
 As a security measure this script *WILL NOT* access files located in any subdirectory unless explicitly stated.
-
+<!--
 __Known bugs__ : <br>
 Ignores files if extension is not in lowercase standard encoding.
-
+-->
 ## Contact Author(s)
 
 Name : Rahul Bordoloi <br>
