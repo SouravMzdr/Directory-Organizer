@@ -17,7 +17,7 @@ class move_files:
 
         # Set the Source Direcory Path [i.e the Downloads Path by DEFAULT]
         self.source = os.path.join(self.homedir, path)
-        self.all_files = [f for f in listdir(self.source) if isfile(join(self.source, f))]
+        self.all_files = [f for f in listdir(self.source) if isfile(join(self.source, f))] 
         ## NOTE - We can Change the "/Downloads" path to any other appropriate path if this script is required to run in that Directory
 
         # List Containing the files to be Moved
@@ -50,7 +50,6 @@ class move_files:
 
         # Searching for Files and Categorising
         for files in self.all_files:
-
             if files.endswith(tuple(self.picture_ext)):
                 self.pictures.append(files)
             elif files.endswith(tuple(self.document_ext)):
@@ -64,25 +63,21 @@ class move_files:
     # Display Functions to Print Operation [Show Moved Files]
         
     def show_Moved_Documents(self):
-
         print(f"{len(self.documents)} Files moved to Documents!")
         for document in self.documents:
             print(document)
 
     def show_Moved_Pictures(self):
-
         print(f"{len(self.pictures)} Files moved to Pictures!")
         for picture in self.pictures:
             print(picture)
 
     def show_Moved_Music(self):
-
         print(f"{len(self.musics)} Files moved to Music!")
         for music in self.musics:
             print(music)
         
     def show_Moved_Videos(self):
-
         print(f"{len(self.videos)} Files moved to Videos!")
         for video in self.videos:
             print(video)
@@ -91,34 +86,27 @@ class move_files:
     # Functions Handling the Moving Mechanism
 
     def move_To_Document(self):
-
         destination = os.path.join(self.homedir, 'Documents')
-        self.checkDirExists(destination)
         print("Moving Documents ...")
         for document in self.documents:
             shutil.move(os.path.join(self.source, document), destination)
         self.show_Moved_Documents()
 
     def move_To_Pictures(self):
-
         destination = os.path.join(self.homedir, 'Pictures')
-        self.checkDirExists(destination)
         print("Moving Pictures ...")
         for picture in self.pictures:
             shutil.move(os.path.join(self.source, picture), destination)
         self.show_Moved_Pictures()
 
     def move_To_Music(self):
-
         destination = os.path.join(self.homedir, 'Music')
-        self.checkDirExists(destination)
         print("Moving Music Files ...")
-        for music in self.music:
+        for music in self.musics:
             shutil.move(os.path.join(self.source, music), destination)
         self.show_Moved_Music()
 
     def move_To_Video(self):
-
         destination = os.path.join(self.homedir, 'Videos')
         print("Moving Video Files ...")
         for video in self.videos:
@@ -140,7 +128,7 @@ class move_files:
         else:
             print("No Pictures to Move!")
 
-        if len(self.music) != 0:
+        if len(self.musics) != 0:
             self.move_To_Music()
         else:
             print("No Music Files to Move!")
@@ -149,14 +137,6 @@ class move_files:
             self.move_To_Video()
         else:
             print("No Videos to Move!")
-
-    
-    # Check for Existence of a Directory
-    
-    def checkDirExists(self, path):
-
-        if not path:
-            os.makedirs(path)
 
     
 # Main Function
