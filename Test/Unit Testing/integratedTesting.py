@@ -111,8 +111,8 @@ class directoryOrganiser:
                 print(video)
 
     def show_Moved_Others(self):
-
-        print(f'{len(self.others)} Files moved to Others!')
+    
+        print(f"{len(self.others)} Files moved to Others!")
         if self.flag.lower() == 'yes':
             for other in self.others:
                 print(other)
@@ -207,3 +207,30 @@ class directoryOrganiser:
 
         if not os.path.isdir(path):
             os.makedirs(path)
+
+
+# Main Function
+def main():
+
+    # Using Error Handling Techniques to Handle Error(s)
+    
+    try:
+
+        print('''
+Where do you want to Organise your Files?
+1. Downloads
+2. Any Other Location
+Enter the Full Path to your Directory [Just Type 'Downloads' for Case 2] ->
+        ''')
+        path = input()
+        moveFilesObject = directoryOrganiser(path)
+        moveFilesObject.checkCondition()
+
+    except:
+
+        print("Please Try Again! An Unexpected Error has Occurred!")
+
+
+# Main Method
+if __name__ == '__main__':
+    main()

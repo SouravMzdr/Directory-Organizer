@@ -20,12 +20,12 @@ class directoryOrganiser:
             # Setting Home Directory Path
             self.homedir = str(Path.home())
             
-            # Set the Source Directory Path [i.e the Downloads Path by DEFAULT]
+            # Set the Source Direcory Path [i.e the Downloads Path by DEFAULT]
             self.source = os.path.join(self.homedir, path)
         
         else:
 
-            # Set the Source Directory Path [when Path isn't Downloads]
+            # Set the Source Direcory Path [when Path isn't Downloads]
             self.source = os.path.join(path)
         
         # Copying All Files Names Present in the Source Directory
@@ -80,130 +80,66 @@ class directoryOrganiser:
                 self.others.append(files)
 
 
-    # Display Functions to Print Operation(s) [Show Moved Files] [Flag]
-        
-    def show_Moved_Documents(self):
-
-        print(f"{len(self.documents)} Files moved to Documents!")
-        if self.flag.lower() == 'yes':
-            for document in self.documents:
-                print(document)
-
-    def show_Moved_Pictures(self):
-
-        print(f"{len(self.pictures)} Files moved to Pictures!")
-        if self.flag.lower() == 'yes':
-            for picture in self.pictures:
-                print(picture)
-
-    def show_Moved_Music(self):
-
-        print(f"{len(self.musics)} Files moved to Music!")
-        if self.flag.lower() == 'yes':
-            for music in self.musics:
-                print(music)
+    # Display Functions to Print Operation [Show Moved Files]
         
     def show_Moved_Videos(self):
 
-        print(f"{len(self.videos)} Files moved to Videos!")
+        #print("Interpreter was Here")
+        print(f'{len(self.videos)} Files moved to Videos!')
         if self.flag.lower() == 'yes':
             for video in self.videos:
                 print(video)
 
-    def show_Moved_Others(self):
-
-        print(f'{len(self.others)} Files moved to Others!')
-        if self.flag.lower() == 'yes':
-            for other in self.others:
-                print(other)
-
 
     # Functions Handling the Moving Mechanism
 
-    def move_To_Document(self):
-
-        destination = os.path.join(self.source, 'Documents')
-        self.checkDirExists(destination)
-        print("Moving Documents ...")
-        for document in self.documents:
-            shutil.move(os.path.join(self.source, document), destination)
-        self.show_Moved_Documents()
-
-    def move_To_Pictures(self):
-
-        destination = os.path.join(self.source, 'Pictures')
-        self.checkDirExists(destination)
-        print("Moving Pictures ...")
-        for picture in self.pictures:
-            shutil.move(os.path.join(self.source, picture), destination)
-        self.show_Moved_Pictures()
-
-    def move_To_Music(self):
-
-        destination = os.path.join(self.source, 'Music')
-        self.checkDirExists(destination)
-        print("Moving Music Files ...")
-        for music in self.musics:
-            shutil.move(os.path.join(self.source, music), destination)
-        self.show_Moved_Music()
-
     def move_To_Videos(self):
 
+        #print("Interpreter was Here")
         destination = os.path.join(self.source, 'Videos')
         self.checkDirExists(destination)
-        print("Moving Video Files ...")
+        print("Moving Videos ...")
         for video in self.videos:
             shutil.move(os.path.join(self.source, video), destination)
         self.show_Moved_Videos()
-
-    def move_To_Others(self):
-
-        destination = os.path.join(self.source, 'Others')
-        self.checkDirExists(destination)
-        print("Moving Other File Extensions ...")
-        for other in self.others:
-            shutil.move(os.path.join(self.source, other), destination)
-        self.show_Moved_Others()
 
 
     # Condition to Check if Required Files are Present [for Moving] and are Calling Appropriate Functions
 
     def checkCondition(self):
 
-        ## Sets the Flag whether to Print the Files Names of the Moved Files
+        #print("Interpreter was Here")
         self.flag = input("Do you want to Display the File Names? (YES/NO) : ")
-
-        ## Check for whether the files exists for a Particular Category or Not
-
-        if len(self.documents) != 0:
-            self.move_To_Document()
-        else:
-            print("No Documents to Move!")
-
-        if len(self.pictures) != 0:
-            self.move_To_Pictures()
-        else:
-            print("No Pictures to Move!")
-
-        if len(self.musics) != 0:
-            self.move_To_Music()
-        else:
-            print("No Music Files to Move!")
-
         if len(self.videos) != 0:
             self.move_To_Videos()
         else:
             print("No Videos to Move!")
-
-        if len(self.others) != 0:
-            self.move_To_Others()
-        else:
-            print("No Miscellaneous Files to Move!")
 
     
     # Check for Existence of a Directory [if it DNE, creates a New One]
     
     def checkDirExists(self, path):
 
+        #print("Interpreter was Here")
         if not os.path.isdir(path):
             os.makedirs(path)
+
+    
+# Main Function
+def main():
+    
+    print('''
+Where do you want to Organise your Files?
+1. Downloads
+2. Any Other Location
+Enter the Full Path to your Directory [Just Type 'Downloads' for Case 2] ->
+    ''')
+    path = input()
+    moveFilesObject = directoryOrganiser(path)
+    #print("Interpreter was Here")
+    moveFilesObject.checkCondition()
+
+
+# Main Method
+if __name__ == '__main__':
+    main()
