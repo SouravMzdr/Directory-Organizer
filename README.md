@@ -41,7 +41,7 @@ if __extension_type__ is passed as an argument, then a dictionary containing mov
 
 Sample Output of `showHistory()` :
 
-![Sample JSON](./Test/Snapshots/JSON.png)
+![Sample JSON](./Test/Snapshots/JSON.PNG)
 
 ## About
 
