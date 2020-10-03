@@ -41,7 +41,7 @@ if __extension_type__ is passed as an argument, then a dictionary containing mov
 
 Sample Output of `showHistory()` :
 
-![Sample JSON](.\Test\Snapshots\JSON.png)
+![Sample JSON](./Test/Snapshots/JSON.png)
 
 ## About
 
@@ -86,7 +86,7 @@ pip install -e .
 
 Run this Script in order to move all the Files to their respective type folders! [Default]
 
-![Main](.\Test\Snapshots\directory_organizerMain.png)
+![Main](./Test/Snapshots/directory_organizerMain.png)
 
 <!--
 ```python
@@ -146,11 +146,11 @@ Time Elapsed :  0.13 seconds
 
 Before `Organizing` :
 
-![Before Downloads](.\Test\Snapshots\Before_Downloads_Main.PNG) 
+![Before Downloads](./Test/Snapshots/Before_Downloads_Main.PNG) 
 
 After `Organizing` :
 
-![After Downloads](.\Test\Snapshots\After_Downloads_Main.PNG) 
+![After Downloads](./Test/Snapshots/After_Downloads_Main.PNG) 
 
 ## Developing `Directory Organizer`
 
