@@ -1,7 +1,7 @@
 # Null Input
 
 print('''
-Where do you want to Organise your Files?
+Where do you want to Organize your Files?
 1. Downloads
 2. Any Other Location
 Enter the Full Path to your Directory [Just Type 'Downloads' for Case 2] ->
