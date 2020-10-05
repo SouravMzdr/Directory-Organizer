@@ -41,7 +41,7 @@ if __extension_type__ is passed as an argument, then a dictionary containing mov
 
 Sample Output of `showHistory()` :
 
-![Sample JSON](.\Test\Snapshots\jsonShowHistory.PNG)
+![Sample JSON](./Test/Snapshots/jsonShowHistory.PNG)
 
 ---------------------------------------
 
@@ -59,7 +59,7 @@ if __extension_type__ is passed as an argument, then a dictionary containing all
 
 Sample Output of `showExtensions()` :
 
-![Sample JSON](.\Test\Snapshots\jsonFileExtensions.PNG)
+![Sample JSON](./Test/Snapshots/jsonFileExtensions.PNG)
 
 ---------------------------------------
 
@@ -113,7 +113,7 @@ pip install -e .
 
 Run this Script in order to move all the Files to their respective type folders! [Default]
 
-![Main](.\Test\Snapshots\directory_organizerMain.png)
+![Main](./Test/Snapshots/directory_organizerMain.png)
 
 <!--
 ```python
@@ -185,11 +185,11 @@ Time Elapsed :  0.07 seconds
 
 Before `Organizing` :
 
-![Before Downloads](.\Test\Snapshots\beforeOrganizing.JPG) 
+![Before Downloads](./Test/Snapshots/beforeOrganizing.JPG) 
 
 After `Organizing` :
 
-![After Downloads](.\Test\Snapshots\afterOrganizing.PNG) 
+![After Downloads](./Test/Snapshots/afterOrganizing.PNG)
 
 ## Developing `Directory Organizer`
 
