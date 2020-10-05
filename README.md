@@ -11,7 +11,7 @@ Have a cluttered Folder/Directory? No Worries!
 
 `Directory Organizer` is a simple Python Package that scans your folder directory and moves the specific file types to its type-specific directories.
 
-<b> Currently Available for All Platform.  </b>
+<b> Currently Available for All Platforms.  </b>
 
 ## Class Documentation
 
