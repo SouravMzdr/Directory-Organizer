@@ -189,7 +189,7 @@ Before `Organizing` :
 
 After `Organizing` :
 
-![After Downloads](./Test/Snapshots/afterOrganizing.PNG) 
+![After Downloads](./Test/Snapshots/afterOrganizing.PNG)
 
 ## Developing `Directory Organizer`
 
